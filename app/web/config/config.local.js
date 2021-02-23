@@ -3,7 +3,7 @@ import base from "./config.base";
 export default type => {
   return Object.assign({}, base(type), {
     http: {
-      baseURL: "http://localhost:7001/api"
+      baseURL: "/api"
     },
     // 日志
     logger: {

@@ -25,7 +25,7 @@ export default (namespace, {store, cookies, api, logger}) => {
     actions: {
       async getList({commit}){
         commit('showLoading');
-        let list = await api('book').getList('vue');
+        let list = await api('book').getList();
         commit('init', list);
         commit('hideLoading');
       }
